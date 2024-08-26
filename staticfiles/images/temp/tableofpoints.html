@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualifiers Results & Standings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:  #465C1E;
+            background: url("/Users/voohithachoudary/Downloads/tableofpoints.jpeg");
+            background-size: cover;
+            background-repeat:no-repeat;
+            margin: 0;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+           
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .header {
+            
+            color: white;
+
+            padding: 10px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .groups-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .group {
+            width: 32%;
+            margin-bottom: 20px;
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .group-header {
+            background-color: #003399;
+            color: white;
+            padding: 5px 10px;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .flag {
+            width: 20px;
+            height: 15px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            RESULTS & STANDINGS
+            
+        </div>
+        <div class="groups-container">
+            <div class="group">
+                <div class="group-header">GROUP A</div>
+                <table>
+                    <tr>
+                        <th>Team</th>
+                        <th>P</th>
+                        <th>W</th>
+                        <th>D</th>
+                        <th>L</th>
+                        <th>GF:GA</th>
+                        <th>Pts</th>
+                    </tr>
+                    <tr>
+                        <td>Spain</td>
+                        <td>6</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>19:3</td>
+                        <td>15</td>
+                    </tr>
+                    <!-- Add more rows for other teams in Group A -->
+                </table>
+            </div>
+            <!-- Repeat the group div structure for Groups B through I -->
+        </div>
+    </div>
+</body>
+</html>

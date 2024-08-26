@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAMPIONS LEAGUE</title>
+    <style>
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            margin-bottom: 2rem;
+        }
+        
+        #bracket {
+            width: 100%;
+            height: auto;
+            max-height: 90vh;
+        }
+        
+        
+        body {
+            background-color: #000;
+            background: url("{% static 'images/fixtures_bg.jpeg' %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .bracket {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            max-width: 1200px;
+        }
+        
+        .round {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+        .match {
+            background-color: #222;
+            border-radius: 5px;
+            margin: 5px;
+            padding: 5px;
+            width: 120px;
+        }
+        
+        .team {
+            display: flex;
+            align-items: center;
+            margin: 2px 0;
+        }
+        
+        .flag {
+            width: 20px;
+            height: 12px;
+            margin-right: 5px;
+        }
+        
+        .winner {
+            font-weight: bold;
+        }
+        
+        .final {
+            align-self: center;
+        }
+        
+        .trophy {
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 10px auto;
+        }        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CHAMPIONS LEAGUE </h1>
+        <svg id="bracket" viewBox="0 0 1000 450"></svg>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="{% static 'js/fixtures_script.js' %}"></script>
+</body>
+</html>

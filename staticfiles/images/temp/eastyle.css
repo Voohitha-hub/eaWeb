@@ -1,0 +1,136 @@
+body {
+    background: url("/Users/voohithachoudary/Downloads/WhatsApp Image 2024-08-15 at 4.39.08 PM.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-size: 2rem;
+}
+
+/* Navbar styles */
+.navbar {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    background-color: #3b692a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+}
+
+.button:hover {
+    background-color: #2a4d1b; /* Slightly darker shade for hover effect */
+}
+
+/* Content and alignment */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80vw;
+    height: 80vh;
+    position: relative;
+}
+
+/* Container for heading and loading animation */
+.heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between the heading and blocks */
+    margin-top: 0; /* Ensure there's no extra margin if not needed */
+}
+
+.loading-container {
+    display: flex;
+    gap: 15px; /* Space between the blocks */
+    
+}
+
+.block {
+    width: 15px; /* Adjust width as needed */
+    height: 15px; /* Adjust height as needed */
+    background-color: white;
+    animation: loading 1s infinite ease-in-out;
+}
+
+.block:nth-child(1) { animation-delay: 0s; }
+.block:nth-child(2) { animation-delay: 0.1s; }
+.block:nth-child(3) { animation-delay: 0.2s; }
+.block:nth-child(4) { animation-delay: 0.3s; }
+.block:nth-child(5) { animation-delay: 0.4s; }
+
+@keyframes loading {
+    0%, 100% { transform: scale(1); background-color: white; }
+    50% { transform: scale(1.5); background-color: white; }
+}
+
+/* Ball styling */
+.ball {
+    width: 50px; /* Width of the ball */
+    height: 50px; /* Height of the ball */
+    background-image: url('/Users/voohithachoudary/Downloads/vecteezy_soccer-ball-on-fire-illustration_430960.jpg'); /* Replace with your ball image path */
+    background-size: cover; /* Ensure the image covers the ball div */
+    position: absolute;
+    top: 0; /* Start position (top of the container) */
+    left: -60px; /* Start position (off-screen) */
+    animation: moveBall 4s linear infinite; /* Animation properties */
+}
+
+/* Keyframes for ball movement */
+@keyframes moveBall {
+    0% {
+        transform: translateX(-60px) translateY(0); /* Start position */
+    }
+    50% {
+        transform: translateX(calc(100% - 50px)) translateY(-100px); /* Move to right and upward */
+    }
+    100% {
+        transform: translateX(calc(100% - 50px)) translateY(0); /* End position */
+    }
+}
+
+/* Moving text styles */
+.moving-text1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-top: 0;
+    transition: transform 0.3s ease, font-size 0.8s ease;
+}
+
+.moving-text1:hover {
+    transform: scale(1.2); /* Enlarge text on hover */
+    font-size: 2.4rem; /* Optional: increase font size slightly */
+}
+
+/* p Styles */
+.moving-text2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-top: 20px;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+.moving-text2:hover {
+    transform: scale(1.1);
+    font-size: 1.6rem;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChAMPIONS LEAGUE</title>
+    <style>
+        body {
+            background-color: #000;
+            background: url("/Users/voohithachoudary/Downloads/WhatsApp Image 2024-08-15 at 4.08.25 PM.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .bracket {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .round {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .match {
+            background-color: #222;
+            border-radius: 5px;
+            margin: 5px;
+            padding: 5px;
+            width: 120px;
+        }
+        .team {
+            display: flex;
+            align-items: center;
+            margin: 2px 0;
+        }
+        .flag {
+            width: 20px;
+            height: 12px;
+            margin-right: 5px;
+        }
+        .winner {
+            font-weight: bold;
+        }
+        .final {
+            align-self: center;
+        }
+        .trophy {
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 10px auto;
+        }
+        h1 {
+            text-align: center;
+            position: absolute;
+            top: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>CHAMPIONS LEAGUE</h1>
+    <div class="bracket">
+        <div class="round">
+            <div class="match">
+                <div class="team"><div class="flag" style="background-color: #C8102E;"></div>WAL</div>
+                <div class="team winner"><div class="flag" style="background-color: #C8102E;"></div>DEN</div>
+            </div>
+            <div class="match">
+                <div class="team"><div class="flag" style="background-color: #AE1C28;"></div>NED</div>
+                <div class="team winner"><div class="flag" style="background-color: #D7141A;"></div>CZE</div>
+            </div>
+            <div class="match">
+                <div class="team"><div class="flag" style="background-color: #FF0000;"></div>CRO</div>
+                <div class="team winner"><div class="flag" style="background-color: #C60B1E;"></div>ESP</div>
+            </div>
+            <div class="match">
+                <div class="team"><div class="flag" style="background-color: #002395;"></div>FRA</div>
+                <div class="team winner"><div class="flag" style="background-color: #FF0000;"></div>SUI</div>
+            </div>
+        </div>
+        <div class="round">
+            <div class="match">
+                <div class="team winner"><div class="flag" style="background-color: #C8102E;"></div>DEN</div>
+                <div class="team"><div class="flag" style="background-color: #D7141A;"></div>CZE</div>
+            </div>
+            <div class="match">
+                <div class="team winner"><div class="flag" style="background-color: #C60B1E;"></div>ESP</div>
+                <div class="team"><div class="flag" style="background-color: #FF0000;"></div>SUI</div>
+            </div>
+        </div>
+        <div class="round">
+            <div class="match">
+                <div class="team winner"><div class="flag" style="background-color: #C8102E;"></div>DEN</div>
+                <div class="team"><div class="flag" style="background-color: #C60B1E;"></div>ESP</div>
+            </div>
+        </div>
+        <div class="round final">
+            <div class="match">
+                <div class="team"><div class="flag" style="background-color: #C8102E;"></div>DEN</div>
+                <div class="team winner"><div class="flag" style="background-color: #FFFFFF;"></div>ENG</div>
+            </div>
+            <div class="trophy"></div>
+            <div class="match">
+                <div class="team winner"><div class="flag" style="background-color: #009246;"></div>ITA</div>
+            </div>
+        </div>
+        <div class="round">
+            <div class="match">
+                <div class="team"><div class="flag" style="background-color: #FFD700;"></div>UKR</div>
+                <div class="team winner"><div class="flag" style="background-color: #FFFFFF;"></div>ENG</div>
+            </div>
+        </div>
+        <div class="round">
+            <div class="match">
+                <div class="team"><div class="flag" style="background-color: #FECC00;"></div>SWE</div>
+                <div class="team winner"><div class="flag" style="background-color: #FFD700;"></div>UKR</div>
+            </div>
+            <div class="match">
+                <div class="team winner"><div class="flag" style="background-color: #FFFFFF;"></div>ENG</div>
+                <div class="team"><div class="flag" style="background-color: #000000;"></div>GER</div>
+            </div>
+        </div>
+        <div class="round">
+            <div class="match">
+                <div class="team"><div class="flag" style="background-color: #000000;"></div>BEL</div>
+                <div class="team winner"><div class="flag" style="background-color: #009246;"></div>ITA</div>
+            </div>
+            <div class="match">
+                <div class="team"><div class="flag" style="background-color: #006600;"></div>POR</div>
+                <div class="team winner"><div class="flag" style="background-color: #000000;"></div>BEL</div>
+            </div>
+            <div class="match">
+                <div class="team winner"><div class="flag" style="background-color: #009246;"></div>ITA</div>
+                <div class="team"><div class="flag" style="background-color: #EF3340;"></div>AUT</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

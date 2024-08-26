@@ -1,0 +1,104 @@
+body {
+    /* background: url("/Users/voohithachoudary/Downloads/WhatsApp Image 2024-08-15 at 4.39.08 PM.jpeg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Navbar styles */
+.navbar {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.tab {
+    background-color: #3b692a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab a {
+    color: white;
+    text-decoration: none;
+}
+
+.tab:hover {
+    background-color: #2a4d1b; /* Slightly darker shade for hover effect */
+}
+
+/* Container for ball and text */
+.container {
+    width: 80vw;
+    height: 80vh;
+    position: relative; /* Needed for positioning the ball */
+    overflow: hidden; /* Hide overflow to keep the ball within bounds */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Ball styling */
+.ball {
+    width: 50px; /* Width of the ball */
+    height: 50px; /* Height of the ball */
+    background-image: url('/Users/voohithachoudary/Downloads/vecteezy_soccer-ball-on-fire-illustration_430960.jpg'); /* Replace with your ball image path */
+    background-size: cover; /* Ensure the image covers the ball div */
+    position: absolute;
+    top: 0; /* Start position (top of the container) */
+    left: -60px; /* Start position (off-screen) */
+    animation: moveBall 4s linear infinite; /* Animation properties */
+}
+
+/* Keyframes for ball movement */
+@keyframes moveBall {
+    0% {
+        transform: translateX(-60px) translateY(0); /* Start position */
+    }
+    50% {
+        transform: translateX(calc(100% - 50px)) translateY(-100px); /* Move to right and upward */
+    }
+    100% {
+        transform: translateX(calc(100% - 50px)) translateY(0); /* End position */
+    }
+}
+
+/* Moving text styles */
+.moving-text1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem; /* Adjust as needed */
+    color: #ffffff; /* Text color */
+    margin-top: 0; /* Adjust top margin as needed */
+    transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+.moving-text1:hover {
+    transform: scale(1.2); /* Enlarge text on hover */
+    font-size: 2.4rem; /* Optional: increase font size slightly */
+}
+
+/* p Styles */
+.moving-text2 {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    color: #ffffff; /* Text color */
+    margin-top: 20px; /* Space between h1 and p */
+    transition: transform 0.3s ease, font-size 0.3s ease; /* Add transition for smooth effect */
+}
+
+.moving-text2:hover {
+    transform: scale(1.1); /* Enlarge text on hover */
+    font-size: 1.6rem; /* Optional: increase font size slightly */
+}

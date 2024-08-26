@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euro 2020 Round of 16 Fixtures</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#527506;
+            color: white;
+            margin: 0;
+            padding: 20px;
+            
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .team-image {
+            width: 50px;  
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%; 
+        }        
+        .logo-container{
+            height: 150px;
+            width: 280px;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+    
+        .logo {
+            height: 30px;
+            margin-right: 10px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .fixtures {
+            background-color: #465C1E ;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .fixture {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:#90B844 ;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 2px;
+        }
+        .teams {
+            display: flex;
+            align-items: center;
+            width: 40%;
+        }
+        .flag {
+            width: 30px;
+            height: 20px;
+            margin: 0 5px;
+        }
+        .date-time {
+            font-size: 14px;
+            width: 25%;
+            text-align: center;
+        }
+        .channel {
+            font-size: 12px;
+            width: 25%;
+            text-align: right;
+        }
+        .channel img {
+            width: 15px;
+            height: 15px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span>
+                <div class="logo-container">
+                    <img class="logo-container" src="{% static 'images/FC25(1).jpeg' %}" alt="Euro 2020" class="logo">
+                    <img class="logo-container" src="{% static 'images/FC25(2).jpeg' %}" alt="Euro 2020" class="logo">
+                    
+                </div>
+            </span>
+            
+        </div>
+
+        <h1>The Round of 16 Fixtures</h1>
+        <div class="fixtures" id="fixtures-container">
+        </div>
+    </div>
+    <script src="{% static 'js/calendar.js' %}"></script>
+</body>
+</html>
