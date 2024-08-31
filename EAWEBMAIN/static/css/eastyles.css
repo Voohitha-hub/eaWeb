@@ -55,19 +55,35 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px; /* Space between the heading and blocks */
-    margin-top: 0; /* Ensure there's no extra margin if not needed */
+    gap: 25px; /* Initial space between the heading and blocks */
+    margin-top: 0;
+    position: relative;
 }
 
+/* Moving text styles */
+.moving-text1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-top: 0;
+    transition: transform 0.3s ease, font-size 0.8s ease, margin-right 0.8s ease;
+}
+
+.moving-text1:hover {
+    transform: scale(1.2); /* Enlarge text on hover */
+    font-size: 2rem; /* Optional: increase font size slightly */
+    margin-right: 40px; /* Push the text away from the blocks */
+}
+
+/* Loading blocks */
 .loading-container {
     display: flex;
-    gap: 15px; /* Space between the blocks */
-    
+    gap: 15px;
 }
 
 .block {
-    width: 15px; /* Adjust width as needed */
-    height: 15px; /* Adjust height as needed */
+    width: 15px;
+    height: 15px;
     background-color: white;
     animation: loading 1s infinite ease-in-out;
 }
@@ -83,43 +99,6 @@ body {
     50% { transform: scale(1.5); background-color: white; }
 }
 
-/* Ball styling */
-.ball {
-    width: 50px; /* Width of the ball */
-    height: 50px; /* Height of the ball */
-    background-size: cover; /* Ensure the image covers the ball div */
-    position: absolute;
-    top: 0; /* Start position (top of the container) */
-    left: -60px; /* Start position (off-screen) */
-    animation: moveBall 4s linear infinite; /* Animation properties */
-}
-
-/* Keyframes for ball movement */
-@keyframes moveBall {
-    0% {
-        transform: translateX(-60px) translateY(0); /* Start position */
-    }
-    50% {
-        transform: translateX(calc(100% - 50px)) translateY(-100px); /* Move to right and upward */
-    }
-    100% {
-        transform: translateX(calc(100% - 50px)) translateY(0); /* End position */
-    }
-}
-
-/* Moving text styles */
-.moving-text1 {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 2rem;
-    color: #ffffff;
-    margin-top: 0;
-    transition: transform 0.3s ease, font-size 0.8s ease;
-}
-
-.moving-text1:hover {
-    transform: scale(1.2); /* Enlarge text on hover */
-    font-size: 2.4rem; /* Optional: increase font size slightly */
-}
 
 /* p Styles */
 .moving-text2 {

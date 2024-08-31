@@ -9,7 +9,7 @@ function createTeamBox(x, y, code, flagUrl) {
     const rect = document.createElementNS(svgNS, "rect");
     rect.setAttribute("width", "120");
     rect.setAttribute("height", "30");
-    rect.setAttribute("fill", "rgba(0,0,0,0.6)");
+    rect.setAttribute("fill", "black");
     rect.setAttribute("stroke", "white");
     rect.setAttribute("stroke-width", "1");
     rect.setAttribute("rx", "4");
@@ -41,7 +41,7 @@ function createTeamBox(x, y, code, flagUrl) {
 function createPath(d) {
     const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
     path.setAttribute("d", d);
-    path.setAttribute("stroke", "white");
+    path.setAttribute("stroke", "black");
     path.setAttribute("fill", "none");
     path.setAttribute("stroke-width", "2");
     return path;
